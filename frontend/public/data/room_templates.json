@@ -1,0 +1,626 @@
+[
+  {
+    "template_id": "open_arena",
+    "description": "Wide flat room, no obstacles",
+    "size": "Large",
+    "width": 20,
+    "height": 16,
+    "tile_grid": [
+      "####################",
+      "E..................#",
+      "#..................#",
+      "#..S............S..#",
+      "#..................#",
+      "#..................#",
+      "#..................#",
+      "#......S..S........#",
+      "#..................#",
+      "#..................#",
+      "#..................#",
+      "#..S............S..#",
+      "#..................#",
+      "#..................#",
+      "#..................E",
+      "####################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 3, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 16, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 7, "y": 7 }, "spawn_type": "enemy" },
+      { "position": { "x": 10, "y": 7 }, "spawn_type": "enemy" },
+      { "position": { "x": 3, "y": 11 }, "spawn_type": "enemy" },
+      { "position": { "x": 16, "y": 11 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 1 }, "direction": "left" },
+      { "position": { "x": 19, "y": 14 }, "direction": "right" }
+    ],
+    "chokepoints": 0,
+    "obstacles": 0,
+    "metadata": {
+      "boss_eligible": true,
+      "entrance_eligible": true,
+      "total_tiles": 320,
+      "has_hazards": false,
+      "has_cover": false
+    }
+  },
+  {
+    "template_id": "pillared_hall",
+    "description": "Rows of pillars creating cover lanes",
+    "size": "Large",
+    "width": 20,
+    "height": 16,
+    "tile_grid": [
+      "####################",
+      "E..................#",
+      "#..O....O....O.....#",
+      "#..................#",
+      "#.S..............S.#",
+      "#..................#",
+      "#..O....O....O.....#",
+      "#..................#",
+      "#..................#",
+      "#..O....O....O.....#",
+      "#..................#",
+      "#.S..............S.#",
+      "#..................#",
+      "#..O....O....O.....#",
+      "#..................E",
+      "####################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 2, "y": 4 }, "spawn_type": "enemy" },
+      { "position": { "x": 17, "y": 4 }, "spawn_type": "enemy" },
+      { "position": { "x": 2, "y": 11 }, "spawn_type": "enemy" },
+      { "position": { "x": 17, "y": 11 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 1 }, "direction": "left" },
+      { "position": { "x": 19, "y": 14 }, "direction": "right" }
+    ],
+    "chokepoints": 2,
+    "obstacles": 12,
+    "metadata": {
+      "boss_eligible": true,
+      "entrance_eligible": true,
+      "total_tiles": 320,
+      "has_hazards": false,
+      "has_cover": true
+    }
+  },
+  {
+    "template_id": "narrow_corridor",
+    "description": "Long and narrow, limited maneuver",
+    "size": "Small",
+    "width": 20,
+    "height": 6,
+    "tile_grid": [
+      "####################",
+      "E..................E",
+      "#.S....S....S....S.#",
+      "#..................#",
+      "#..................#",
+      "####################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 2, "y": 2 }, "spawn_type": "enemy" },
+      { "position": { "x": 7, "y": 2 }, "spawn_type": "enemy" },
+      { "position": { "x": 12, "y": 2 }, "spawn_type": "enemy" },
+      { "position": { "x": 17, "y": 2 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 1 }, "direction": "left" },
+      { "position": { "x": 19, "y": 1 }, "direction": "right" }
+    ],
+    "chokepoints": 1,
+    "obstacles": 0,
+    "metadata": {
+      "boss_eligible": false,
+      "entrance_eligible": false,
+      "total_tiles": 120,
+      "has_hazards": false,
+      "has_cover": false
+    }
+  },
+  {
+    "template_id": "pit_room",
+    "description": "Central pit, walkable edges",
+    "size": "Medium",
+    "width": 16,
+    "height": 12,
+    "tile_grid": [
+      "################",
+      "E..............#",
+      "#..............#",
+      "#..S..~~~~..S..#",
+      "#.....~~~~.....#",
+      "#.....~~~~.....#",
+      "#.....~~~~.....#",
+      "#..S..~~~~..S..#",
+      "#..............#",
+      "#..............#",
+      "#..............E",
+      "################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 3, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 12, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 3, "y": 7 }, "spawn_type": "enemy" },
+      { "position": { "x": 12, "y": 7 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 1 }, "direction": "left" },
+      { "position": { "x": 15, "y": 10 }, "direction": "right" }
+    ],
+    "chokepoints": 0,
+    "obstacles": 1,
+    "metadata": {
+      "boss_eligible": false,
+      "entrance_eligible": true,
+      "total_tiles": 192,
+      "has_hazards": true,
+      "has_cover": false
+    }
+  },
+  {
+    "template_id": "l_shaped",
+    "description": "L-bend, line of sight breaks",
+    "size": "Medium",
+    "width": 16,
+    "height": 12,
+    "tile_grid": [
+      "################",
+      "E..........#####",
+      "#..........#####",
+      "#..S....S..#####",
+      "#..............#",
+      "#..............#",
+      "#..............#",
+      "#..............#",
+      "#####..S....S..E",
+      "#####..........#",
+      "#####..........#",
+      "################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 3, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 8, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 7, "y": 8 }, "spawn_type": "enemy" },
+      { "position": { "x": 12, "y": 8 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 1 }, "direction": "left" },
+      { "position": { "x": 15, "y": 8 }, "direction": "right" }
+    ],
+    "chokepoints": 1,
+    "obstacles": 1,
+    "metadata": {
+      "boss_eligible": false,
+      "entrance_eligible": true,
+      "total_tiles": 192,
+      "has_hazards": false,
+      "has_cover": false
+    }
+  },
+  {
+    "template_id": "cross_room",
+    "description": "Four-way intersection",
+    "size": "Medium",
+    "width": 16,
+    "height": 16,
+    "tile_grid": [
+      "######EEEE######",
+      "######....######",
+      "######....######",
+      "######.S..######",
+      "######....######",
+      "E..............E",
+      "#..S......S....#",
+      "#..............#",
+      "#..............#",
+      "#..............#",
+      "E..............E",
+      "######....######",
+      "######..S.######",
+      "######....######",
+      "######....######",
+      "######EEEE######"
+    ],
+    "spawn_points": [
+      { "position": { "x": 7, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 3, "y": 6 }, "spawn_type": "enemy" },
+      { "position": { "x": 10, "y": 6 }, "spawn_type": "enemy" },
+      { "position": { "x": 8, "y": 12 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 5 }, "direction": "left" },
+      { "position": { "x": 15, "y": 5 }, "direction": "right" },
+      { "position": { "x": 0, "y": 10 }, "direction": "left" },
+      { "position": { "x": 15, "y": 10 }, "direction": "right" },
+      { "position": { "x": 6, "y": 0 }, "direction": "up" },
+      { "position": { "x": 6, "y": 15 }, "direction": "down" }
+    ],
+    "chokepoints": 4,
+    "obstacles": 0,
+    "metadata": {
+      "boss_eligible": false,
+      "entrance_eligible": true,
+      "total_tiles": 256,
+      "has_hazards": false,
+      "has_cover": false
+    }
+  },
+  {
+    "template_id": "rubble_field",
+    "description": "Scattered destructible rubble",
+    "size": "Large",
+    "width": 20,
+    "height": 16,
+    "tile_grid": [
+      "####################",
+      "E..................#",
+      "#....O.......O.....#",
+      "#..S.....O........S#",
+      "#........O.........#",
+      "#...O..............#",
+      "#..............O...#",
+      "#......S..S........#",
+      "#...O..............#",
+      "#..............O...#",
+      "#........O.........#",
+      "#..S.....O........S#",
+      "#....O.......O.....#",
+      "#..................#",
+      "#..................E",
+      "####################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 3, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 18, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 7, "y": 7 }, "spawn_type": "enemy" },
+      { "position": { "x": 10, "y": 7 }, "spawn_type": "enemy" },
+      { "position": { "x": 3, "y": 11 }, "spawn_type": "enemy" },
+      { "position": { "x": 18, "y": 11 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 1 }, "direction": "left" },
+      { "position": { "x": 19, "y": 14 }, "direction": "right" }
+    ],
+    "chokepoints": 0,
+    "obstacles": 8,
+    "metadata": {
+      "boss_eligible": true,
+      "entrance_eligible": true,
+      "total_tiles": 320,
+      "has_hazards": false,
+      "has_cover": true
+    }
+  },
+  {
+    "template_id": "elevated_ring",
+    "description": "Raised ring around sunken center",
+    "size": "Medium",
+    "width": 16,
+    "height": 12,
+    "tile_grid": [
+      "################",
+      "E..............#",
+      "#..............#",
+      "#..S.######.S..#",
+      "#....#....#....#",
+      "#....#....#....#",
+      "#....#....#....#",
+      "#....#....#....#",
+      "#..S.######.S..#",
+      "#..............#",
+      "#..............E",
+      "################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 3, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 12, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 3, "y": 8 }, "spawn_type": "enemy" },
+      { "position": { "x": 12, "y": 8 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 1 }, "direction": "left" },
+      { "position": { "x": 15, "y": 10 }, "direction": "right" }
+    ],
+    "chokepoints": 1,
+    "obstacles": 1,
+    "metadata": {
+      "boss_eligible": false,
+      "entrance_eligible": true,
+      "total_tiles": 192,
+      "has_hazards": false,
+      "has_cover": false
+    }
+  },
+  {
+    "template_id": "twin_chambers",
+    "description": "Two connected sub-rooms",
+    "size": "Large",
+    "width": 20,
+    "height": 12,
+    "tile_grid": [
+      "####################",
+      "E..................#",
+      "#..S............S..#",
+      "#.........#........#",
+      "#.........#........#",
+      "#.........#........#",
+      "#..................#",
+      "#.........#........#",
+      "#.........#........#",
+      "#..S............S..#",
+      "#..................E",
+      "####################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 3, "y": 2 }, "spawn_type": "enemy" },
+      { "position": { "x": 16, "y": 2 }, "spawn_type": "enemy" },
+      { "position": { "x": 3, "y": 9 }, "spawn_type": "enemy" },
+      { "position": { "x": 16, "y": 9 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 1 }, "direction": "left" },
+      { "position": { "x": 19, "y": 10 }, "direction": "right" }
+    ],
+    "chokepoints": 1,
+    "obstacles": 1,
+    "metadata": {
+      "boss_eligible": true,
+      "entrance_eligible": true,
+      "total_tiles": 240,
+      "has_hazards": false,
+      "has_cover": false
+    }
+  },
+  {
+    "template_id": "alcove_room",
+    "description": "Side alcoves for ambush positions",
+    "size": "Medium",
+    "width": 16,
+    "height": 12,
+    "tile_grid": [
+      "################",
+      "E..............#",
+      "#.##..........##",
+      "#.##.S....S.##.#",
+      "#...........##.#",
+      "#..............#",
+      "#..............#",
+      "#.##.S....S.##.#",
+      "#.##..........##",
+      "#..............#",
+      "#..............E",
+      "################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 5, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 10, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 5, "y": 7 }, "spawn_type": "enemy" },
+      { "position": { "x": 10, "y": 7 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 1 }, "direction": "left" },
+      { "position": { "x": 15, "y": 10 }, "direction": "right" }
+    ],
+    "chokepoints": 2,
+    "obstacles": 4,
+    "metadata": {
+      "boss_eligible": false,
+      "entrance_eligible": true,
+      "total_tiles": 192,
+      "has_hazards": false,
+      "has_cover": false
+    }
+  },
+  {
+    "template_id": "bridge_room",
+    "description": "Narrow bridge over void",
+    "size": "Small",
+    "width": 20,
+    "height": 8,
+    "tile_grid": [
+      "####################",
+      "E.~~~..........~~~.#",
+      "#.~~~..S....S..~~~.#",
+      "#.~~~..........~~~.#",
+      "#.~~~..........~~~.#",
+      "#.~~~..S....S..~~~.E",
+      "#.~~~..........~~~.#",
+      "####################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 7, "y": 2 }, "spawn_type": "enemy" },
+      { "position": { "x": 12, "y": 2 }, "spawn_type": "enemy" },
+      { "position": { "x": 7, "y": 5 }, "spawn_type": "enemy" },
+      { "position": { "x": 12, "y": 5 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 1 }, "direction": "left" },
+      { "position": { "x": 19, "y": 5 }, "direction": "right" }
+    ],
+    "chokepoints": 1,
+    "obstacles": 0,
+    "metadata": {
+      "boss_eligible": false,
+      "entrance_eligible": false,
+      "total_tiles": 160,
+      "has_hazards": true,
+      "has_cover": false
+    }
+  },
+  {
+    "template_id": "circular_arena",
+    "description": "Round room, open center",
+    "size": "Medium",
+    "width": 16,
+    "height": 12,
+    "tile_grid": [
+      "################",
+      "#####....#######",
+      "###..........###",
+      "##..S......S..##",
+      "E..............#",
+      "#..............#",
+      "#..............E",
+      "##..S......S..##",
+      "###..........###",
+      "#####....#######",
+      "#####....#######",
+      "################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 4, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 11, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 4, "y": 7 }, "spawn_type": "enemy" },
+      { "position": { "x": 11, "y": 7 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 4 }, "direction": "left" },
+      { "position": { "x": 15, "y": 6 }, "direction": "right" }
+    ],
+    "chokepoints": 0,
+    "obstacles": 0,
+    "metadata": {
+      "boss_eligible": false,
+      "entrance_eligible": true,
+      "total_tiles": 192,
+      "has_hazards": false,
+      "has_cover": false
+    }
+  },
+  {
+    "template_id": "maze_fragment",
+    "description": "Short twisting paths",
+    "size": "Medium",
+    "width": 16,
+    "height": 12,
+    "tile_grid": [
+      "################",
+      "E..#.....#.....#",
+      "#..#..S..#.....#",
+      "#..#.....#..#..#",
+      "#..S.....#..#..#",
+      "#..###......#..#",
+      "#..###......#..#",
+      "#..#..#...S....#",
+      "#..#..#........#",
+      "#..#.....S..#..E",
+      "#........#..#..#",
+      "################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 6, "y": 2 }, "spawn_type": "enemy" },
+      { "position": { "x": 3, "y": 4 }, "spawn_type": "enemy" },
+      { "position": { "x": 10, "y": 7 }, "spawn_type": "enemy" },
+      { "position": { "x": 9, "y": 9 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 1 }, "direction": "left" },
+      { "position": { "x": 15, "y": 9 }, "direction": "right" }
+    ],
+    "chokepoints": 3,
+    "obstacles": 6,
+    "metadata": {
+      "boss_eligible": false,
+      "entrance_eligible": true,
+      "total_tiles": 192,
+      "has_hazards": false,
+      "has_cover": false
+    }
+  },
+  {
+    "template_id": "throne_room",
+    "description": "Large room with raised platform at back",
+    "size": "Large",
+    "width": 20,
+    "height": 16,
+    "tile_grid": [
+      "####################",
+      "E..................#",
+      "#..................#",
+      "#..S............S..#",
+      "#..................#",
+      "#....O........O....#",
+      "#..................#",
+      "#..................#",
+      "#......S..S........#",
+      "#..................#",
+      "#....O........O....#",
+      "#..................#",
+      "#..S............S..#",
+      "#...####OO####.....#",
+      "#...#........#.....E",
+      "####################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 3, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 16, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 7, "y": 8 }, "spawn_type": "enemy" },
+      { "position": { "x": 10, "y": 8 }, "spawn_type": "enemy" },
+      { "position": { "x": 3, "y": 12 }, "spawn_type": "enemy" },
+      { "position": { "x": 16, "y": 12 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 1 }, "direction": "left" },
+      { "position": { "x": 19, "y": 14 }, "direction": "right" }
+    ],
+    "chokepoints": 1,
+    "obstacles": 5,
+    "metadata": {
+      "boss_eligible": true,
+      "entrance_eligible": true,
+      "total_tiles": 320,
+      "has_hazards": false,
+      "has_cover": true
+    }
+  },
+  {
+    "template_id": "crystal_cavern",
+    "description": "Irregular shape with crystal outcroppings",
+    "size": "Large",
+    "width": 20,
+    "height": 16,
+    "tile_grid": [
+      "####################",
+      "E..................#",
+      "#..O...............#",
+      "#.........O.....S..#",
+      "#..S...............#",
+      "#...............O..#",
+      "#......O...........#",
+      "#..................#",
+      "#..........O.......#",
+      "#...O..............#",
+      "#...............S..#",
+      "#..S...............#",
+      "#.........O........#",
+      "#..................#",
+      "#..............O...E",
+      "####################"
+    ],
+    "spawn_points": [
+      { "position": { "x": 16, "y": 3 }, "spawn_type": "enemy" },
+      { "position": { "x": 3, "y": 4 }, "spawn_type": "enemy" },
+      { "position": { "x": 16, "y": 10 }, "spawn_type": "enemy" },
+      { "position": { "x": 3, "y": 11 }, "spawn_type": "enemy" }
+    ],
+    "entry_points": [
+      { "position": { "x": 0, "y": 1 }, "direction": "left" },
+      { "position": { "x": 19, "y": 14 }, "direction": "right" }
+    ],
+    "chokepoints": 0,
+    "obstacles": 6,
+    "metadata": {
+      "boss_eligible": true,
+      "entrance_eligible": true,
+      "total_tiles": 320,
+      "has_hazards": false,
+      "has_cover": true
+    }
+  }
+]
