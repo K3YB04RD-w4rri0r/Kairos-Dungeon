@@ -1,1 +1,0 @@
-"""Chimera Dungeon backend application."""
